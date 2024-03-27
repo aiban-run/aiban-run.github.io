@@ -1,6 +1,6 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN">    
-<script>
+<!DOCTYPE html>
+<html lang="en">
+  <script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -9,19 +9,27 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
-    <head>
-        <meta charset="gb2312">
-        <title>
-           正在打开……
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正在加载</title>
+    <script>
+        // 定义要跳转的网址数组
+        const urls = [
+            'https://aibang.run?refId=LNDFNmjsb9'
+        ];
 
-        </title>
+        // 获取随机索引
+        const randomIndex = Math.floor(Math.random() * urls.length);
 
-        <meta http-equiv="refresh" content="0;url=https://aibang.run?refId=LNDFNmjsb9" />
-
-        <meta http-equiv="Cache-Control" content="no-transform" />
-
-    </head>    
-    <body>
-正在载入……
-    </body>
+        // 设置延迟以确保页面加载
+        setTimeout(function() {
+            // 使用 window.location.href 进行跳转
+            window.location.href = urls[randomIndex];
+        }, 10); // 延迟1秒
+    </script>
+</head>
+<body>
+    <h1>正在跳转请稍等...</h1>
+</body>
 </html>
